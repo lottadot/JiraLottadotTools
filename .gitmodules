@@ -1,0 +1,9 @@
+[submodule "Vendor/AFNetworking"]
+	path = Vendor/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "Vendor/AFOAuth2Manager"]
+	path = Vendor/AFOAuth2Manager
+	url = https://github.com/AFNetworking/AFOAuth2Manager.git
+[submodule "Vendor/KIF"]
+	path = Vendor/KIF
+	url = https://github.com/kif-framework/KIF.git

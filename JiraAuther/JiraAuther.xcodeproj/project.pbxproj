@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340BDA7C1A4DEAB600E425FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA7B1A4DEAB600E425FE /* main.m */; };
+		340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA7E1A4DEAB600E425FE /* AppDelegate.m */; };
+		340BDA821A4DEAB600E425FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA811A4DEAB600E425FE /* ViewController.m */; };
+		340BDA851A4DEAB600E425FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340BDA831A4DEAB600E425FE /* Main.storyboard */; };
+		340BDA871A4DEAB600E425FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340BDA861A4DEAB600E425FE /* Images.xcassets */; };
+		340BDA8A1A4DEAB600E425FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340BDA881A4DEAB600E425FE /* LaunchScreen.xib */; };
+		340BDA961A4DEAB600E425FE /* JiraAutherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA951A4DEAB600E425FE /* JiraAutherTests.m */; };
+		340BDAA51A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA21A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m */; };
+		340BDAA61A4DEAF600E425FE /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA41A4DEAF600E425FE /* AFOAuth2Manager.m */; };
+		340BDAEB1A4DF27400E425FE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAD91A4DF27400E425FE /* AFHTTPRequestOperation.m */; };
+		340BDAEC1A4DF27400E425FE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADB1A4DF27400E425FE /* AFHTTPRequestOperationManager.m */; };
+		340BDAED1A4DF27400E425FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADD1A4DF27400E425FE /* AFHTTPSessionManager.m */; };
+		340BDAEE1A4DF27400E425FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE01A4DF27400E425FE /* AFNetworkReachabilityManager.m */; };
+		340BDAEF1A4DF27400E425FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE21A4DF27400E425FE /* AFSecurityPolicy.m */; };
+		340BDAF01A4DF27400E425FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE41A4DF27400E425FE /* AFURLConnectionOperation.m */; };
+		340BDAF11A4DF27400E425FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE61A4DF27400E425FE /* AFURLRequestSerialization.m */; };
+		340BDAF21A4DF27400E425FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE81A4DF27400E425FE /* AFURLResponseSerialization.m */; };
+		340BDAF31A4DF27400E425FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAEA1A4DF27400E425FE /* AFURLSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		340BDA901A4DEAB600E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDA6E1A4DEAB600E425FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340BDA751A4DEAB600E425FE;
+			remoteInfo = JiraAuther;
+		};
+		340BDACE1A4DEEDD00E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46AA1857A0C700A5F081;
+			remoteInfo = KIF;
+		};
+		340BDAD01A4DEEDD00E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB72047C1680DDAD00278DA2;
+			remoteInfo = "KIF-OCUnit";
+		};
+		340BDAD21A4DEEDD00E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECC1177F8C83005A041A;
+			remoteInfo = "Test Host";
+		};
+		340BDAD41A4DEEDD00E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46CD1857A0F300A5F081;
+			remoteInfo = "KIF Tests";
+		};
+		340BDAD61A4DEEDD00E425FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECEB177F8DB3005A041A;
+			remoteInfo = "KIF Tests-OCUnit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		340BDA761A4DEAB600E425FE /* JiraAuther.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraAuther.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		340BDA7A1A4DEAB600E425FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340BDA7B1A4DEAB600E425FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		340BDA7D1A4DEAB600E425FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		340BDA7E1A4DEAB600E425FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		340BDA801A4DEAB600E425FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		340BDA811A4DEAB600E425FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		340BDA841A4DEAB600E425FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		340BDA861A4DEAB600E425FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		340BDA891A4DEAB600E425FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		340BDA8F1A4DEAB600E425FE /* JiraAutherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiraAutherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		340BDA941A4DEAB600E425FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340BDA951A4DEAB600E425FE /* JiraAutherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiraAutherTests.m; sourceTree = "<group>"; };
+		340BDAA11A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AFHTTPRequestSerializer+OAuth2.h"; path = "../Vendor/AFOAuth2Manager/AFOAuth2Manager/AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; };
+		340BDAA21A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AFHTTPRequestSerializer+OAuth2.m"; path = "../Vendor/AFOAuth2Manager/AFOAuth2Manager/AFHTTPRequestSerializer+OAuth2.m"; sourceTree = "<group>"; };
+		340BDAA31A4DEAF600E425FE /* AFOAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFOAuth2Manager.h; path = ../Vendor/AFOAuth2Manager/AFOAuth2Manager/AFOAuth2Manager.h; sourceTree = "<group>"; };
+		340BDAA41A4DEAF600E425FE /* AFOAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFOAuth2Manager.m; path = ../Vendor/AFOAuth2Manager/AFOAuth2Manager/AFOAuth2Manager.m; sourceTree = "<group>"; };
+		340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = ../Vendor/KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		340BDAD81A4DF27400E425FE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		340BDAD91A4DF27400E425FE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		340BDADA1A4DF27400E425FE /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		340BDADB1A4DF27400E425FE /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		340BDADC1A4DF27400E425FE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		340BDADD1A4DF27400E425FE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = ../Vendor/AFNetworking/AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		340BDADE1A4DF27400E425FE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = ../Vendor/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		340BDADF1A4DF27400E425FE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = ../Vendor/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		340BDAE01A4DF27400E425FE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = ../Vendor/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		340BDAE11A4DF27400E425FE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = ../Vendor/AFNetworking/AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		340BDAE21A4DF27400E425FE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = ../Vendor/AFNetworking/AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		340BDAE31A4DF27400E425FE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = ../Vendor/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		340BDAE41A4DF27400E425FE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = ../Vendor/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		340BDAE51A4DF27400E425FE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = ../Vendor/AFNetworking/AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		340BDAE61A4DF27400E425FE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = ../Vendor/AFNetworking/AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		340BDAE71A4DF27400E425FE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = ../Vendor/AFNetworking/AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		340BDAE81A4DF27400E425FE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = ../Vendor/AFNetworking/AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		340BDAE91A4DF27400E425FE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = ../Vendor/AFNetworking/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		340BDAEA1A4DF27400E425FE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = ../Vendor/AFNetworking/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		340BDA731A4DEAB600E425FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340BDA8C1A4DEAB600E425FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340BDA6D1A4DEAB600E425FE = {
+			isa = PBXGroup;
+			children = (
+				340BDA781A4DEAB600E425FE /* JiraAuther */,
+				340BDA9F1A4DEABF00E425FE /* Vendor */,
+				340BDA921A4DEAB600E425FE /* JiraAutherTests */,
+				340BDA771A4DEAB600E425FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		340BDA771A4DEAB600E425FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				340BDA761A4DEAB600E425FE /* JiraAuther.app */,
+				340BDA8F1A4DEAB600E425FE /* JiraAutherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340BDA781A4DEAB600E425FE /* JiraAuther */ = {
+			isa = PBXGroup;
+			children = (
+				340BDA7D1A4DEAB600E425FE /* AppDelegate.h */,
+				340BDA7E1A4DEAB600E425FE /* AppDelegate.m */,
+				340BDA801A4DEAB600E425FE /* ViewController.h */,
+				340BDA811A4DEAB600E425FE /* ViewController.m */,
+				340BDA831A4DEAB600E425FE /* Main.storyboard */,
+				340BDA861A4DEAB600E425FE /* Images.xcassets */,
+				340BDA881A4DEAB600E425FE /* LaunchScreen.xib */,
+				340BDA791A4DEAB600E425FE /* Supporting Files */,
+			);
+			path = JiraAuther;
+			sourceTree = "<group>";
+		};
+		340BDA791A4DEAB600E425FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				340BDA7A1A4DEAB600E425FE /* Info.plist */,
+				340BDA7B1A4DEAB600E425FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		340BDA921A4DEAB600E425FE /* JiraAutherTests */ = {
+			isa = PBXGroup;
+			children = (
+				340BDA951A4DEAB600E425FE /* JiraAutherTests.m */,
+				340BDA931A4DEAB600E425FE /* Supporting Files */,
+			);
+			path = JiraAutherTests;
+			sourceTree = "<group>";
+		};
+		340BDA931A4DEAB600E425FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				340BDA941A4DEAB600E425FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		340BDA9F1A4DEABF00E425FE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				340BDAC41A4DEEC900E425FE /* KIF */,
+				340BDAA71A4DEE6A00E425FE /* AFNetworking */,
+				340BDAA01A4DEAC900E425FE /* AFNetworkingOAuth */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		340BDAA01A4DEAC900E425FE /* AFNetworkingOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				340BDAA11A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.h */,
+				340BDAA21A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m */,
+				340BDAA31A4DEAF600E425FE /* AFOAuth2Manager.h */,
+				340BDAA41A4DEAF600E425FE /* AFOAuth2Manager.m */,
+			);
+			name = AFNetworkingOAuth;
+			sourceTree = "<group>";
+		};
+		340BDAA71A4DEE6A00E425FE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				340BDAD81A4DF27400E425FE /* AFHTTPRequestOperation.h */,
+				340BDAD91A4DF27400E425FE /* AFHTTPRequestOperation.m */,
+				340BDADA1A4DF27400E425FE /* AFHTTPRequestOperationManager.h */,
+				340BDADB1A4DF27400E425FE /* AFHTTPRequestOperationManager.m */,
+				340BDADC1A4DF27400E425FE /* AFHTTPSessionManager.h */,
+				340BDADD1A4DF27400E425FE /* AFHTTPSessionManager.m */,
+				340BDADE1A4DF27400E425FE /* AFNetworking.h */,
+				340BDADF1A4DF27400E425FE /* AFNetworkReachabilityManager.h */,
+				340BDAE01A4DF27400E425FE /* AFNetworkReachabilityManager.m */,
+				340BDAE11A4DF27400E425FE /* AFSecurityPolicy.h */,
+				340BDAE21A4DF27400E425FE /* AFSecurityPolicy.m */,
+				340BDAE31A4DF27400E425FE /* AFURLConnectionOperation.h */,
+				340BDAE41A4DF27400E425FE /* AFURLConnectionOperation.m */,
+				340BDAE51A4DF27400E425FE /* AFURLRequestSerialization.h */,
+				340BDAE61A4DF27400E425FE /* AFURLRequestSerialization.m */,
+				340BDAE71A4DF27400E425FE /* AFURLResponseSerialization.h */,
+				340BDAE81A4DF27400E425FE /* AFURLResponseSerialization.m */,
+				340BDAE91A4DF27400E425FE /* AFURLSessionManager.h */,
+				340BDAEA1A4DF27400E425FE /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		340BDAC41A4DEEC900E425FE /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */,
+			);
+			name = KIF;
+			sourceTree = "<group>";
+		};
+		340BDAC61A4DEEDC00E425FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				340BDACF1A4DEEDD00E425FE /* libKIF.a */,
+				340BDAD11A4DEEDD00E425FE /* libKIF-OCUnit.a */,
+				340BDAD31A4DEEDD00E425FE /* Test Host.app */,
+				340BDAD51A4DEEDD00E425FE /* KIF Tests - XCTest.xctest */,
+				340BDAD71A4DEEDD00E425FE /* KIF Tests-OCUnit.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		340BDA751A4DEAB600E425FE /* JiraAuther */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340BDA991A4DEAB600E425FE /* Build configuration list for PBXNativeTarget "JiraAuther" */;
+			buildPhases = (
+				340BDA721A4DEAB600E425FE /* Sources */,
+				340BDA731A4DEAB600E425FE /* Frameworks */,
+				340BDA741A4DEAB600E425FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiraAuther;
+			productName = JiraAuther;
+			productReference = 340BDA761A4DEAB600E425FE /* JiraAuther.app */;
+			productType = "com.apple.product-type.application";
+		};
+		340BDA8E1A4DEAB600E425FE /* JiraAutherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340BDA9C1A4DEAB600E425FE /* Build configuration list for PBXNativeTarget "JiraAutherTests" */;
+			buildPhases = (
+				340BDA8B1A4DEAB600E425FE /* Sources */,
+				340BDA8C1A4DEAB600E425FE /* Frameworks */,
+				340BDA8D1A4DEAB600E425FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				340BDA911A4DEAB600E425FE /* PBXTargetDependency */,
+			);
+			name = JiraAutherTests;
+			productName = JiraAutherTests;
+			productReference = 340BDA8F1A4DEAB600E425FE /* JiraAutherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		340BDA6E1A4DEAB600E425FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Lottadot LLC";
+				TargetAttributes = {
+					340BDA751A4DEAB600E425FE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					340BDA8E1A4DEAB600E425FE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 340BDA751A4DEAB600E425FE;
+					};
+				};
+			};
+			buildConfigurationList = 340BDA711A4DEAB600E425FE /* Build configuration list for PBXProject "JiraAuther" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 340BDA6D1A4DEAB600E425FE;
+			productRefGroup = 340BDA771A4DEAB600E425FE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 340BDAC61A4DEEDC00E425FE /* Products */;
+					ProjectRef = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				340BDA751A4DEAB600E425FE /* JiraAuther */,
+				340BDA8E1A4DEAB600E425FE /* JiraAutherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		340BDACF1A4DEEDD00E425FE /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 340BDACE1A4DEEDD00E425FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		340BDAD11A4DEEDD00E425FE /* libKIF-OCUnit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKIF-OCUnit.a";
+			remoteRef = 340BDAD01A4DEEDD00E425FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		340BDAD31A4DEEDD00E425FE /* Test Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Test Host.app";
+			remoteRef = 340BDAD21A4DEEDD00E425FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		340BDAD51A4DEEDD00E425FE /* KIF Tests - XCTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests - XCTest.xctest";
+			remoteRef = 340BDAD41A4DEEDD00E425FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		340BDAD71A4DEEDD00E425FE /* KIF Tests-OCUnit.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests-OCUnit.octest";
+			remoteRef = 340BDAD61A4DEEDD00E425FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		340BDA741A4DEAB600E425FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340BDA851A4DEAB600E425FE /* Main.storyboard in Resources */,
+				340BDA8A1A4DEAB600E425FE /* LaunchScreen.xib in Resources */,
+				340BDA871A4DEAB600E425FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340BDA8D1A4DEAB600E425FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		340BDA721A4DEAB600E425FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340BDAF01A4DF27400E425FE /* AFURLConnectionOperation.m in Sources */,
+				340BDAEB1A4DF27400E425FE /* AFHTTPRequestOperation.m in Sources */,
+				340BDAEE1A4DF27400E425FE /* AFNetworkReachabilityManager.m in Sources */,
+				340BDAF31A4DF27400E425FE /* AFURLSessionManager.m in Sources */,
+				340BDAF11A4DF27400E425FE /* AFURLRequestSerialization.m in Sources */,
+				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
+				340BDAF21A4DF27400E425FE /* AFURLResponseSerialization.m in Sources */,
+				340BDAA61A4DEAF600E425FE /* AFOAuth2Manager.m in Sources */,
+				340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */,
+				340BDAEC1A4DF27400E425FE /* AFHTTPRequestOperationManager.m in Sources */,
+				340BDAEF1A4DF27400E425FE /* AFSecurityPolicy.m in Sources */,
+				340BDAA51A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
+				340BDAED1A4DF27400E425FE /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340BDA8B1A4DEAB600E425FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340BDA961A4DEAB600E425FE /* JiraAutherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		340BDA911A4DEAB600E425FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340BDA751A4DEAB600E425FE /* JiraAuther */;
+			targetProxy = 340BDA901A4DEAB600E425FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		340BDA831A4DEAB600E425FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				340BDA841A4DEAB600E425FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		340BDA881A4DEAB600E425FE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				340BDA891A4DEAB600E425FE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		340BDA971A4DEAB600E425FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		340BDA981A4DEAB600E425FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		340BDA9A1A4DEAB600E425FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JiraAuther/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		340BDA9B1A4DEAB600E425FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JiraAuther/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		340BDA9D1A4DEAB600E425FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JiraAutherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraAuther.app/JiraAuther";
+			};
+			name = Debug;
+		};
+		340BDA9E1A4DEAB600E425FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JiraAutherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraAuther.app/JiraAuther";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340BDA711A4DEAB600E425FE /* Build configuration list for PBXProject "JiraAuther" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340BDA971A4DEAB600E425FE /* Debug */,
+				340BDA981A4DEAB600E425FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340BDA991A4DEAB600E425FE /* Build configuration list for PBXNativeTarget "JiraAuther" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340BDA9A1A4DEAB600E425FE /* Debug */,
+				340BDA9B1A4DEAB600E425FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		340BDA9C1A4DEAB600E425FE /* Build configuration list for PBXNativeTarget "JiraAutherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340BDA9D1A4DEAB600E425FE /* Debug */,
+				340BDA9E1A4DEAB600E425FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 340BDA6E1A4DEAB600E425FE /* Project object */;
+}
