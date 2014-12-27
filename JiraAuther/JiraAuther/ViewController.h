@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class AFHTTPRequestSerializer;
+
 @interface ViewController : UIViewController
 
 

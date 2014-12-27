@@ -7,6 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AFHTTPRequestOperation.h"
+#import "AFURLRequestSerialization.h"
+#import "AFHTTPRequestSerializer+OAuth2.h"
+#import "AFOAuth2Manager.h"
+
+#define kJiraAutherServiceProviderIdentifier @"JiraAutherServiceProviderIdentifier"
 
 @interface ViewController () <UITextFieldDelegate>
 
@@ -16,6 +24,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *passwordLabel;
 
+@property (nonatomic, strong) AFOAuthCredential *credential;
 @end
 
 @implementation ViewController
@@ -40,7 +49,8 @@
 
 - (IBAction)authenticateButtonTapped:(id)sender
 {
-    // TODO
+    //[self fakeAuthenticationToObtainToken];
+    [self authenticateViaBasicWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -71,6 +81,133 @@
 - (BOOL)authenticateButtonShouldBeEnabled
 {
     return ((self.usernameTextField.text.length > 2) && (self.passwordTextField.text.length > 2));
+}
+
+#pragma mark - Authenticate
+
+/**
+ Authenticates by Basic Auth, actually gets a list of projects
+ */
+- (void)authenticateViaBasicWithUsername:(NSString *)username password:(NSString *)password
+{
+    NSParameterAssert(username);
+    NSParameterAssert(password);
+    
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
+                                              initWithBaseURL:[NSURL URLWithString:@"http://apoc.local:2990/jira"]];
+
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:username password:password];
+
+    [manager GET:@"rest/api/2/project" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        if (operation.response.statusCode != 200) {
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                                message:@"login failed. please try again"
+                                                               delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                [alert setAccessibilityLabel:@"LoginFailed"];
+                [alert show];
+                
+            });
+            
+        } else {
+            
+            NSLog(@"operation:%@", operation);
+            NSLog(@"responseObject:%@", responseObject);
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Success"
+                                                                message:@"You are logged in. Congrats!"
+                                                               delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                [alert setAccessibilityLabel:@"LoginSuccess"];
+                [alert show];
+                
+            });
+            
+            NSArray *
+            
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"error:%@", error);
+
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem" message:[error description] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+        [alert show];
+    }];
+}
+    
+- (void)authenticateViaOAuthWithUsername:(NSString *)username password:(NSString *)password
+{
+    NSParameterAssert(username);
+    NSParameterAssert(password);
+    
+    if (nil != username && nil != password) {
+        
+        NSURL *baseURL = [NSURL URLWithString:@"http://apoc.local:2990/jira"];
+        
+        NSString *clientID     = @"jira-oauth-consumer";
+        NSString *clientSecret = @"AuYhdv6nnNb5DUSbBS4mXXRrivsB1oJV";
+        
+        AFOAuth2Manager *OAuth2Manager =
+        [[AFOAuth2Manager alloc] initWithBaseURL:baseURL
+                                        clientID:clientID
+                                          secret:clientSecret];
+        
+        [OAuth2Manager authenticateUsingOAuthWithURLString:@"plugins/servlet/oauth/authorize"
+                                                  username:username
+                                                  password:password
+                                                     scope:@"email"
+                                                   success:^(AFOAuthCredential *credential) {
+                                                       NSLog(@"Token: %@", credential.accessToken);
+                                                       
+                                                       [AFOAuthCredential storeCredential:credential
+                                                                           withIdentifier:kJiraAutherServiceProviderIdentifier];
+                                                   }
+                                                   failure:^(NSError *error) {
+                                                       NSLog(@"Error: %@", error);
+                                                   }];
+        
+    }
+}
+
+- (void)fakeAuthenticationToObtainToken
+{
+    AFOAuthCredential *credential = [AFOAuthCredential
+                                     credentialWithOAuthToken:@"BGzdx82lyTxppuYay7tHdNBayGZBYbnM"
+                                     tokenType:@"All"];
+    
+    [AFOAuthCredential storeCredential:credential
+                        withIdentifier:kJiraAutherServiceProviderIdentifier];
+    
+    [self getSomething];
+}
+
+- (void)getSomething
+{
+    NSURL *baseURL = [NSURL URLWithString:@"http://apoc.local:2990/jira"];
+    
+    AFOAuthCredential *credential = [AFOAuthCredential
+                                     retrieveCredentialWithIdentifier:kJiraAutherServiceProviderIdentifier];
+    
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
+                                              initWithBaseURL:baseURL];
+    
+    [manager.requestSerializer setAuthorizationHeaderFieldWithCredential:credential];
+    
+    [manager GET:@"rest/api/2/issue/TP-1"
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSLog(@"Success: %@", responseObject);
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Failure: %@", error);
+         }];
+    
 }
 
 @end

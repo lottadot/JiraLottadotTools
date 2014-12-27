@@ -14,25 +14,28 @@
 		340BDA871A4DEAB600E425FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340BDA861A4DEAB600E425FE /* Images.xcassets */; };
 		340BDA8A1A4DEAB600E425FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340BDA881A4DEAB600E425FE /* LaunchScreen.xib */; };
 		340BDA961A4DEAB600E425FE /* JiraAutherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA951A4DEAB600E425FE /* JiraAutherTests.m */; };
-		340BDAA51A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA21A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m */; };
-		340BDAA61A4DEAF600E425FE /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA41A4DEAF600E425FE /* AFOAuth2Manager.m */; };
-		340BDAEB1A4DF27400E425FE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAD91A4DF27400E425FE /* AFHTTPRequestOperation.m */; };
-		340BDAEC1A4DF27400E425FE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADB1A4DF27400E425FE /* AFHTTPRequestOperationManager.m */; };
-		340BDAED1A4DF27400E425FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADD1A4DF27400E425FE /* AFHTTPSessionManager.m */; };
-		340BDAEE1A4DF27400E425FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE01A4DF27400E425FE /* AFNetworkReachabilityManager.m */; };
-		340BDAEF1A4DF27400E425FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE21A4DF27400E425FE /* AFSecurityPolicy.m */; };
-		340BDAF01A4DF27400E425FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE41A4DF27400E425FE /* AFURLConnectionOperation.m */; };
-		340BDAF11A4DF27400E425FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE61A4DF27400E425FE /* AFURLRequestSerialization.m */; };
-		340BDAF21A4DF27400E425FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE81A4DF27400E425FE /* AFURLResponseSerialization.m */; };
-		340BDAF31A4DF27400E425FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAEA1A4DF27400E425FE /* AFURLSessionManager.m */; };
-		340BDB061A4DFD1000E425FE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF61A4DFD1000E425FE /* AFNetworkActivityIndicatorManager.m */; };
-		340BDB071A4DFD1000E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF81A4DFD1000E425FE /* UIActivityIndicatorView+AFNetworking.m */; };
-		340BDB081A4DFD1000E425FE /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFA1A4DFD1000E425FE /* UIAlertView+AFNetworking.m */; };
-		340BDB091A4DFD1000E425FE /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFC1A4DFD1000E425FE /* UIButton+AFNetworking.m */; };
-		340BDB0A1A4DFD1000E425FE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFE1A4DFD1000E425FE /* UIImageView+AFNetworking.m */; };
-		340BDB0B1A4DFD1000E425FE /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB011A4DFD1000E425FE /* UIProgressView+AFNetworking.m */; };
-		340BDB0C1A4DFD1000E425FE /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB031A4DFD1000E425FE /* UIRefreshControl+AFNetworking.m */; };
-		340BDB0D1A4DFD1000E425FE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB051A4DFD1000E425FE /* UIWebView+AFNetworking.m */; };
+		340BDB111A4E219D00E425FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340BDB101A4E219D00E425FE /* MobileCoreServices.framework */; };
+		340BDB131A4E21B600E425FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340BDB121A4E21B600E425FE /* QuartzCore.framework */; };
+		340BDB161A4E240300E425FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340BDB151A4E240300E425FE /* Security.framework */; };
+		340BDB171A4E243400E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA21A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m */; };
+		340BDB181A4E243600E425FE /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAA41A4DEAF600E425FE /* AFOAuth2Manager.m */; };
+		340BDB191A4E244800E425FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAEA1A4DF27400E425FE /* AFURLSessionManager.m */; };
+		340BDB1A1A4E244B00E425FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE81A4DF27400E425FE /* AFURLResponseSerialization.m */; };
+		340BDB1B1A4E244F00E425FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE61A4DF27400E425FE /* AFURLRequestSerialization.m */; };
+		340BDB1C1A4E245600E425FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE41A4DF27400E425FE /* AFURLConnectionOperation.m */; };
+		340BDB1D1A4E245A00E425FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE21A4DF27400E425FE /* AFSecurityPolicy.m */; };
+		340BDB1E1A4E245C00E425FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAE01A4DF27400E425FE /* AFNetworkReachabilityManager.m */; };
+		340BDB1F1A4E246100E425FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADD1A4DF27400E425FE /* AFHTTPSessionManager.m */; };
+		340BDB201A4E246300E425FE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDADB1A4DF27400E425FE /* AFHTTPRequestOperationManager.m */; };
+		340BDB211A4E246500E425FE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAD91A4DF27400E425FE /* AFHTTPRequestOperation.m */; };
+		340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB051A4DFD1000E425FE /* UIWebView+AFNetworking.m */; };
+		340BDB231A4E247000E425FE /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB031A4DFD1000E425FE /* UIRefreshControl+AFNetworking.m */; };
+		340BDB241A4E247700E425FE /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB011A4DFD1000E425FE /* UIProgressView+AFNetworking.m */; };
+		340BDB251A4E247A00E425FE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFE1A4DFD1000E425FE /* UIImageView+AFNetworking.m */; };
+		340BDB261A4E247D00E425FE /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFC1A4DFD1000E425FE /* UIButton+AFNetworking.m */; };
+		340BDB271A4E247F00E425FE /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFA1A4DFD1000E425FE /* UIAlertView+AFNetworking.m */; };
+		340BDB281A4E248200E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF81A4DFD1000E425FE /* UIActivityIndicatorView+AFNetworking.m */; };
+		340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF61A4DFD1000E425FE /* AFNetworkActivityIndicatorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,9 @@
 		340BDB031A4DFD1000E425FE /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "../Vendor/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		340BDB041A4DFD1000E425FE /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "../Vendor/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		340BDB051A4DFD1000E425FE /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "../Vendor/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		340BDB101A4E219D00E425FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		340BDB121A4E21B600E425FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		340BDB151A4E240300E425FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340BDB161A4E240300E425FE /* Security.framework in Frameworks */,
+				340BDB131A4E21B600E425FE /* QuartzCore.framework in Frameworks */,
+				340BDB111A4E219D00E425FE /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				340BDA781A4DEAB600E425FE /* JiraAuther */,
+				340BDB141A4E21C400E425FE /* Frameworks */,
 				340BDA9F1A4DEABF00E425FE /* Vendor */,
 				340BDA921A4DEAB600E425FE /* JiraAutherTests */,
 				340BDA771A4DEAB600E425FE /* Products */,
@@ -307,6 +317,16 @@
 			name = "AFNetworking+UIKit";
 			sourceTree = "<group>";
 		};
+		340BDB141A4E21C400E425FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				340BDB151A4E240300E425FE /* Security.framework */,
+				340BDB121A4E21B600E425FE /* QuartzCore.framework */,
+				340BDB101A4E219D00E425FE /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,28 +471,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340BDAF01A4DF27400E425FE /* AFURLConnectionOperation.m in Sources */,
-				340BDAEB1A4DF27400E425FE /* AFHTTPRequestOperation.m in Sources */,
-				340BDB091A4DFD1000E425FE /* UIButton+AFNetworking.m in Sources */,
-				340BDAEE1A4DF27400E425FE /* AFNetworkReachabilityManager.m in Sources */,
-				340BDB0B1A4DFD1000E425FE /* UIProgressView+AFNetworking.m in Sources */,
-				340BDAF31A4DF27400E425FE /* AFURLSessionManager.m in Sources */,
-				340BDAF11A4DF27400E425FE /* AFURLRequestSerialization.m in Sources */,
-				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
-				340BDB0C1A4DFD1000E425FE /* UIRefreshControl+AFNetworking.m in Sources */,
-				340BDAF21A4DF27400E425FE /* AFURLResponseSerialization.m in Sources */,
-				340BDAA61A4DEAF600E425FE /* AFOAuth2Manager.m in Sources */,
-				340BDB0A1A4DFD1000E425FE /* UIImageView+AFNetworking.m in Sources */,
+				340BDB1A1A4E244B00E425FE /* AFURLResponseSerialization.m in Sources */,
+				340BDB1C1A4E245600E425FE /* AFURLConnectionOperation.m in Sources */,
+				340BDB191A4E244800E425FE /* AFURLSessionManager.m in Sources */,
+				340BDB1F1A4E246100E425FE /* AFHTTPSessionManager.m in Sources */,
+				340BDB211A4E246500E425FE /* AFHTTPRequestOperation.m in Sources */,
+				340BDB201A4E246300E425FE /* AFHTTPRequestOperationManager.m in Sources */,
+				340BDB1B1A4E244F00E425FE /* AFURLRequestSerialization.m in Sources */,
+				340BDB1E1A4E245C00E425FE /* AFNetworkReachabilityManager.m in Sources */,
+				340BDB1D1A4E245A00E425FE /* AFSecurityPolicy.m in Sources */,
+				340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				340BDB171A4E243400E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				340BDB181A4E243600E425FE /* AFOAuth2Manager.m in Sources */,
+				340BDB281A4E248200E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				340BDB271A4E247F00E425FE /* UIAlertView+AFNetworking.m in Sources */,
+				340BDB261A4E247D00E425FE /* UIButton+AFNetworking.m in Sources */,
+				340BDB251A4E247A00E425FE /* UIImageView+AFNetworking.m in Sources */,
+				340BDB241A4E247700E425FE /* UIProgressView+AFNetworking.m in Sources */,
+				340BDB231A4E247000E425FE /* UIRefreshControl+AFNetworking.m in Sources */,
+				340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */,
 				340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */,
-				340BDB081A4DFD1000E425FE /* UIAlertView+AFNetworking.m in Sources */,
-				340BDAEC1A4DF27400E425FE /* AFHTTPRequestOperationManager.m in Sources */,
-				340BDAEF1A4DF27400E425FE /* AFSecurityPolicy.m in Sources */,
-				340BDB0D1A4DFD1000E425FE /* UIWebView+AFNetworking.m in Sources */,
-				340BDAA51A4DEAF600E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
-				340BDAED1A4DF27400E425FE /* AFHTTPSessionManager.m in Sources */,
-				340BDB071A4DFD1000E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				340BDB061A4DFD1000E425FE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,8 +614,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../Vendor/AFNetworking\"/**",
+				);
 				INFOPLIST_FILE = JiraAuther/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -604,8 +630,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../Vendor/AFNetworking\"/**",
+				);
 				INFOPLIST_FILE = JiraAuther/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
