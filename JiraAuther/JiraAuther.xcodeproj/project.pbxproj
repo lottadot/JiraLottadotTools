@@ -36,6 +36,10 @@
 		340BDB271A4E247F00E425FE /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAFA1A4DFD1000E425FE /* UIAlertView+AFNetworking.m */; };
 		340BDB281A4E248200E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF81A4DFD1000E425FE /* UIActivityIndicatorView+AFNetworking.m */; };
 		340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDAF61A4DFD1000E425FE /* AFNetworkActivityIndicatorManager.m */; };
+		340BDB2F1A4E48EC00E425FE /* JIRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB2C1A4E48EC00E425FE /* JIRSession.m */; };
+		340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */; };
+		340BDB351A4E498100E425FE /* JIRProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB321A4E498100E425FE /* JIRProject.m */; };
+		340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,15 @@
 		340BDB101A4E219D00E425FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		340BDB121A4E21B600E425FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		340BDB151A4E240300E425FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		340BDB2B1A4E48EC00E425FE /* JIRSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRSession.h; path = Classes/Models/JIRSession.h; sourceTree = "<group>"; };
+		340BDB2C1A4E48EC00E425FE /* JIRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRSession.m; path = Classes/Models/JIRSession.m; sourceTree = "<group>"; };
+		340BDB2D1A4E48EC00E425FE /* JIRSessionLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRSessionLoginInfo.h; path = Classes/Models/JIRSessionLoginInfo.h; sourceTree = "<group>"; };
+		340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRSessionLoginInfo.m; path = Classes/Models/JIRSessionLoginInfo.m; sourceTree = "<group>"; };
+		340BDB311A4E498100E425FE /* JIRProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRProject.h; path = Classes/Models/JIRProject.h; sourceTree = "<group>"; };
+		340BDB321A4E498100E425FE /* JIRProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRProject.m; path = Classes/Models/JIRProject.m; sourceTree = "<group>"; };
+		340BDB331A4E498100E425FE /* JIRProjectAvatarUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRProjectAvatarUrls.h; path = Classes/Models/JIRProjectAvatarUrls.h; sourceTree = "<group>"; };
+		340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRProjectAvatarUrls.m; path = Classes/Models/JIRProjectAvatarUrls.m; sourceTree = "<group>"; };
+		340BDB371A4E49AB00E425FE /* JIRModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JIRModels.h; path = Classes/Models/JIRModels.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +200,7 @@
 		340BDA781A4DEAB600E425FE /* JiraAuther */ = {
 			isa = PBXGroup;
 			children = (
+				340BDB2A1A4E48DC00E425FE /* Models */,
 				340BDA7D1A4DEAB600E425FE /* AppDelegate.h */,
 				340BDA7E1A4DEAB600E425FE /* AppDelegate.m */,
 				340BDA801A4DEAB600E425FE /* ViewController.h */,
@@ -325,6 +339,22 @@
 				340BDB101A4E219D00E425FE /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		340BDB2A1A4E48DC00E425FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				340BDB311A4E498100E425FE /* JIRProject.h */,
+				340BDB321A4E498100E425FE /* JIRProject.m */,
+				340BDB331A4E498100E425FE /* JIRProjectAvatarUrls.h */,
+				340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */,
+				340BDB2B1A4E48EC00E425FE /* JIRSession.h */,
+				340BDB2C1A4E48EC00E425FE /* JIRSession.m */,
+				340BDB2D1A4E48EC00E425FE /* JIRSessionLoginInfo.h */,
+				340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */,
+				340BDB371A4E49AB00E425FE /* JIRModels.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,14 +503,17 @@
 			files = (
 				340BDB1A1A4E244B00E425FE /* AFURLResponseSerialization.m in Sources */,
 				340BDB1C1A4E245600E425FE /* AFURLConnectionOperation.m in Sources */,
+				340BDB351A4E498100E425FE /* JIRProject.m in Sources */,
 				340BDB191A4E244800E425FE /* AFURLSessionManager.m in Sources */,
 				340BDB1F1A4E246100E425FE /* AFHTTPSessionManager.m in Sources */,
+				340BDB2F1A4E48EC00E425FE /* JIRSession.m in Sources */,
 				340BDB211A4E246500E425FE /* AFHTTPRequestOperation.m in Sources */,
 				340BDB201A4E246300E425FE /* AFHTTPRequestOperationManager.m in Sources */,
 				340BDB1B1A4E244F00E425FE /* AFURLRequestSerialization.m in Sources */,
 				340BDB1E1A4E245C00E425FE /* AFNetworkReachabilityManager.m in Sources */,
 				340BDB1D1A4E245A00E425FE /* AFSecurityPolicy.m in Sources */,
 				340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */,
 				340BDB171A4E243400E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				340BDB181A4E243600E425FE /* AFOAuth2Manager.m in Sources */,
 				340BDB281A4E248200E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -492,6 +525,7 @@
 				340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */,
 				340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */,
 				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
+				340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */,
 				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

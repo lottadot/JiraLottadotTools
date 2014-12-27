@@ -14,6 +14,8 @@
 #import "AFHTTPRequestSerializer+OAuth2.h"
 #import "AFOAuth2Manager.h"
 
+#import "JIRModels.h"
+
 #define kJiraAutherServiceProviderIdentifier @"JiraAutherServiceProviderIdentifier"
 
 @interface ViewController () <UITextFieldDelegate>
@@ -24,7 +26,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *passwordLabel;
 
-@property (nonatomic, strong) AFOAuthCredential *credential;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
+
 @end
 
 @implementation ViewController
@@ -86,7 +90,7 @@
 #pragma mark - Authenticate
 
 /**
- Authenticates by Basic Auth, actually gets a list of projects
+ Authenticates by Basic Auth, gets session info
  */
 - (void)authenticateViaBasicWithUsername:(NSString *)username password:(NSString *)password
 {
@@ -100,25 +104,19 @@
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:username password:password];
 
-    [manager GET:@"rest/api/2/project" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    // http://apoc.local:2990/jira/rest/auth/1/session
+    
+    
+    __weak __typeof(self)weakSelf = self;
+    [manager GET:@"rest/auth/1/session" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        if (operation.response.statusCode != 200) {
-            
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
-                                                                message:@"login failed. please try again"
-                                                               delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
-                [alert setAccessibilityLabel:@"LoginFailed"];
-                [alert show];
-                
-            });
-            
-        } else {
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        
+        if (nil != responseObject && operation.response.statusCode == 200) {
             
             NSLog(@"operation:%@", operation);
             NSLog(@"responseObject:%@", responseObject);
-
+            
             dispatch_async(dispatch_get_main_queue(), ^{
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Success"
                                                                 message:@"You are logged in. Congrats!"
@@ -128,14 +126,71 @@
                 
             });
             
-            NSArray *
+            JIRSession *session = [JIRSession instanceFromDictionary:responseObject];
+            NSLog(@"session:%@", session);
+            [strongSelf setUsername:username];
+            [strongSelf setPassword:password];
             
+            [strongSelf projects];
+            
+        } else {
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                                message:@"login failed. please try again"
+                                                               delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                [alert setAccessibilityLabel:@"LoginFailed"];
+                [alert show];
+                
+            });
+
         }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"error:%@", error);
 
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem" message:[error description] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+        [alert show];
+    }];
+}
+
+- (void)projects
+{
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
+                                              initWithBaseURL:[NSURL URLWithString:@"http://apoc.local:2990/jira"]];
+    
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
+    
+    // http://apoc.local:2990/jira/rest/api/2/project
+    
+    __weak __typeof(self)weakSelf = self;
+    [manager GET:@"rest/api/2/project" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        
+        if (nil != responseObject && operation.response.statusCode == 200) {
+            
+            NSLog(@"operation:%@", operation);
+            NSLog(@"responseObject:%@", responseObject);
+            
+            NSArray *projectDicts = (NSArray *)responseObject;
+            
+            NSMutableArray *projects = [NSMutableArray new];
+            for (NSDictionary *projectdict in projectDicts) {
+                JIRProject *project = [JIRProject instanceFromDictionary:projectdict];
+                [projects addObject:project];
+            }
+
+            NSLog(@"projects:%@", projects);
+        } 
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"error:%@", error);
+        
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem" message:[error description] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
         [alert show];
     }];
