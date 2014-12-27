@@ -97,9 +97,12 @@
     NSParameterAssert(username);
     NSParameterAssert(password);
     
+    AFSecurityPolicy *policy = [[AFSecurityPolicy alloc] init];
+    [policy setAllowInvalidCertificates:YES];
+    
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
                                               initWithBaseURL:[NSURL URLWithString:@"http://apoc.local:2990/jira"]];
-
+    [manager setSecurityPolicy:policy];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:username password:password];
@@ -157,9 +160,12 @@
 
 - (void)projects
 {
+    AFSecurityPolicy *policy = [[AFSecurityPolicy alloc] init];
+    [policy setAllowInvalidCertificates:YES];
+    
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
                                               initWithBaseURL:[NSURL URLWithString:@"http://apoc.local:2990/jira"]];
-    
+    [manager setSecurityPolicy:policy];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
@@ -185,7 +191,56 @@
             }
 
             NSLog(@"projects:%@", projects);
+            
+            JIRProject *firstProject = (JIRProject *)[projects firstObject];
+            [strongSelf issuesForProject:firstProject];
         } 
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"error:%@", error);
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem" message:[error description] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+        [alert show];
+    }];
+}
+
+- (void)issuesForProject:(JIRProject *)project
+{
+    NSParameterAssert(project);
+    
+    AFSecurityPolicy *policy = [[AFSecurityPolicy alloc] init];
+    [policy setAllowInvalidCertificates:YES];
+    
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
+                                              initWithBaseURL:[NSURL URLWithString:@"http://apoc.local:2990/jira"]];
+    [manager setSecurityPolicy:policy];
+
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+ 
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
+    
+    // http://localhost:2990/jira/rest/api/2/search?jql=project=TestProject1&maxResults=-1
+    
+    __weak __typeof(self)weakSelf = self;
+    
+    NSString *urlString = [NSString stringWithFormat:@"rest/api/2/search?jql=project=%@&maxResults=-1", [project key]];
+    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        
+        if (nil != responseObject && operation.response.statusCode == 200) {
+            
+            NSLog(@"operation:%@", operation);
+            NSLog(@"responseObject:%@", responseObject);
+            
+            NSDictionary *responseDict = (NSDictionary *)responseObject;
+            
+            JIRIssues *jiraIssues = [JIRIssues instanceFromDictionary:responseDict];
+            
+            NSLog(@"jiraIssues:%@", jiraIssues);
+        }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         

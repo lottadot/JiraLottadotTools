@@ -40,6 +40,22 @@
 		340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */; };
 		340BDB351A4E498100E425FE /* JIRProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB321A4E498100E425FE /* JIRProject.m */; };
 		340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */; };
+		348102A41A4F4E9800033E36 /* JIRIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102851A4F4E9800033E36 /* JIRIssue.m */; };
+		348102A51A4F4E9800033E36 /* JIRIssueFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102871A4F4E9800033E36 /* JIRIssueFields.m */; };
+		348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102891A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m */; };
+		348102A71A4F4E9800033E36 /* JIRIssueFieldsAssignee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481028B1A4F4E9800033E36 /* JIRIssueFieldsAssignee.m */; };
+		348102A81A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481028D1A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m */; };
+		348102A91A4F4E9800033E36 /* JIRIssueFieldsCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481028F1A4F4E9800033E36 /* JIRIssueFieldsCreator.m */; };
+		348102AA1A4F4E9800033E36 /* JIRIssueFieldsIssuetype.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102911A4F4E9800033E36 /* JIRIssueFieldsIssuetype.m */; };
+		348102AB1A4F4E9800033E36 /* JIRIssueFieldsPriority.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102931A4F4E9800033E36 /* JIRIssueFieldsPriority.m */; };
+		348102AC1A4F4E9800033E36 /* JIRIssueFieldsProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102951A4F4E9800033E36 /* JIRIssueFieldsProgress.m */; };
+		348102AD1A4F4E9800033E36 /* JIRIssueFieldsProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102971A4F4E9800033E36 /* JIRIssueFieldsProject.m */; };
+		348102AE1A4F4E9800033E36 /* JIRIssueFieldsReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102991A4F4E9800033E36 /* JIRIssueFieldsReporter.m */; };
+		348102AF1A4F4E9800033E36 /* JIRIssueFieldsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481029B1A4F4E9800033E36 /* JIRIssueFieldsStatus.m */; };
+		348102B01A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481029D1A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.m */; };
+		348102B11A4F4E9800033E36 /* JIRIssueFieldsVotes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481029F1A4F4E9800033E36 /* JIRIssueFieldsVotes.m */; };
+		348102B21A4F4E9800033E36 /* JIRIssueFieldsWatches.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102A11A4F4E9800033E36 /* JIRIssueFieldsWatches.m */; };
+		348102B31A4F4E9800033E36 /* JIRIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102A31A4F4E9800033E36 /* JIRIssues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +170,38 @@
 		340BDB331A4E498100E425FE /* JIRProjectAvatarUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRProjectAvatarUrls.h; path = Classes/Models/JIRProjectAvatarUrls.h; sourceTree = "<group>"; };
 		340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRProjectAvatarUrls.m; path = Classes/Models/JIRProjectAvatarUrls.m; sourceTree = "<group>"; };
 		340BDB371A4E49AB00E425FE /* JIRModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JIRModels.h; path = Classes/Models/JIRModels.h; sourceTree = "<group>"; };
+		348102841A4F4E9800033E36 /* JIRIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssue.h; path = Classes/Models/JIRIssue.h; sourceTree = "<group>"; };
+		348102851A4F4E9800033E36 /* JIRIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssue.m; path = Classes/Models/JIRIssue.m; sourceTree = "<group>"; };
+		348102861A4F4E9800033E36 /* JIRIssueFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFields.h; path = Classes/Models/JIRIssueFields.h; sourceTree = "<group>"; };
+		348102871A4F4E9800033E36 /* JIRIssueFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFields.m; path = Classes/Models/JIRIssueFields.m; sourceTree = "<group>"; };
+		348102881A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsAggregateprogress.h; path = Classes/Models/JIRIssueFieldsAggregateprogress.h; sourceTree = "<group>"; };
+		348102891A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsAggregateprogress.m; path = Classes/Models/JIRIssueFieldsAggregateprogress.m; sourceTree = "<group>"; };
+		3481028A1A4F4E9800033E36 /* JIRIssueFieldsAssignee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsAssignee.h; path = Classes/Models/JIRIssueFieldsAssignee.h; sourceTree = "<group>"; };
+		3481028B1A4F4E9800033E36 /* JIRIssueFieldsAssignee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsAssignee.m; path = Classes/Models/JIRIssueFieldsAssignee.m; sourceTree = "<group>"; };
+		3481028C1A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.h; path = Classes/Models/JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.h; sourceTree = "<group>"; };
+		3481028D1A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m; path = Classes/Models/JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m; sourceTree = "<group>"; };
+		3481028E1A4F4E9800033E36 /* JIRIssueFieldsCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsCreator.h; path = Classes/Models/JIRIssueFieldsCreator.h; sourceTree = "<group>"; };
+		3481028F1A4F4E9800033E36 /* JIRIssueFieldsCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsCreator.m; path = Classes/Models/JIRIssueFieldsCreator.m; sourceTree = "<group>"; };
+		348102901A4F4E9800033E36 /* JIRIssueFieldsIssuetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsIssuetype.h; path = Classes/Models/JIRIssueFieldsIssuetype.h; sourceTree = "<group>"; };
+		348102911A4F4E9800033E36 /* JIRIssueFieldsIssuetype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsIssuetype.m; path = Classes/Models/JIRIssueFieldsIssuetype.m; sourceTree = "<group>"; };
+		348102921A4F4E9800033E36 /* JIRIssueFieldsPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsPriority.h; path = Classes/Models/JIRIssueFieldsPriority.h; sourceTree = "<group>"; };
+		348102931A4F4E9800033E36 /* JIRIssueFieldsPriority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsPriority.m; path = Classes/Models/JIRIssueFieldsPriority.m; sourceTree = "<group>"; };
+		348102941A4F4E9800033E36 /* JIRIssueFieldsProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsProgress.h; path = Classes/Models/JIRIssueFieldsProgress.h; sourceTree = "<group>"; };
+		348102951A4F4E9800033E36 /* JIRIssueFieldsProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsProgress.m; path = Classes/Models/JIRIssueFieldsProgress.m; sourceTree = "<group>"; };
+		348102961A4F4E9800033E36 /* JIRIssueFieldsProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsProject.h; path = Classes/Models/JIRIssueFieldsProject.h; sourceTree = "<group>"; };
+		348102971A4F4E9800033E36 /* JIRIssueFieldsProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsProject.m; path = Classes/Models/JIRIssueFieldsProject.m; sourceTree = "<group>"; };
+		348102981A4F4E9800033E36 /* JIRIssueFieldsReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsReporter.h; path = Classes/Models/JIRIssueFieldsReporter.h; sourceTree = "<group>"; };
+		348102991A4F4E9800033E36 /* JIRIssueFieldsReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsReporter.m; path = Classes/Models/JIRIssueFieldsReporter.m; sourceTree = "<group>"; };
+		3481029A1A4F4E9800033E36 /* JIRIssueFieldsStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsStatus.h; path = Classes/Models/JIRIssueFieldsStatus.h; sourceTree = "<group>"; };
+		3481029B1A4F4E9800033E36 /* JIRIssueFieldsStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsStatus.m; path = Classes/Models/JIRIssueFieldsStatus.m; sourceTree = "<group>"; };
+		3481029C1A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsStatusStatusCategory.h; path = Classes/Models/JIRIssueFieldsStatusStatusCategory.h; sourceTree = "<group>"; };
+		3481029D1A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsStatusStatusCategory.m; path = Classes/Models/JIRIssueFieldsStatusStatusCategory.m; sourceTree = "<group>"; };
+		3481029E1A4F4E9800033E36 /* JIRIssueFieldsVotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsVotes.h; path = Classes/Models/JIRIssueFieldsVotes.h; sourceTree = "<group>"; };
+		3481029F1A4F4E9800033E36 /* JIRIssueFieldsVotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsVotes.m; path = Classes/Models/JIRIssueFieldsVotes.m; sourceTree = "<group>"; };
+		348102A01A4F4E9800033E36 /* JIRIssueFieldsWatches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFieldsWatches.h; path = Classes/Models/JIRIssueFieldsWatches.h; sourceTree = "<group>"; };
+		348102A11A4F4E9800033E36 /* JIRIssueFieldsWatches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsWatches.m; path = Classes/Models/JIRIssueFieldsWatches.m; sourceTree = "<group>"; };
+		348102A21A4F4E9800033E36 /* JIRIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssues.h; path = Classes/Models/JIRIssues.h; sourceTree = "<group>"; };
+		348102A31A4F4E9800033E36 /* JIRIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssues.m; path = Classes/Models/JIRIssues.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +392,7 @@
 		340BDB2A1A4E48DC00E425FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				340BDB371A4E49AB00E425FE /* JIRModels.h */,
 				340BDB311A4E498100E425FE /* JIRProject.h */,
 				340BDB321A4E498100E425FE /* JIRProject.m */,
 				340BDB331A4E498100E425FE /* JIRProjectAvatarUrls.h */,
@@ -352,7 +401,38 @@
 				340BDB2C1A4E48EC00E425FE /* JIRSession.m */,
 				340BDB2D1A4E48EC00E425FE /* JIRSessionLoginInfo.h */,
 				340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */,
-				340BDB371A4E49AB00E425FE /* JIRModels.h */,
+				348102841A4F4E9800033E36 /* JIRIssue.h */,
+				348102851A4F4E9800033E36 /* JIRIssue.m */,
+				348102861A4F4E9800033E36 /* JIRIssueFields.h */,
+				348102871A4F4E9800033E36 /* JIRIssueFields.m */,
+				348102881A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.h */,
+				348102891A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m */,
+				3481028A1A4F4E9800033E36 /* JIRIssueFieldsAssignee.h */,
+				3481028B1A4F4E9800033E36 /* JIRIssueFieldsAssignee.m */,
+				3481028C1A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.h */,
+				3481028D1A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m */,
+				3481028E1A4F4E9800033E36 /* JIRIssueFieldsCreator.h */,
+				3481028F1A4F4E9800033E36 /* JIRIssueFieldsCreator.m */,
+				348102901A4F4E9800033E36 /* JIRIssueFieldsIssuetype.h */,
+				348102911A4F4E9800033E36 /* JIRIssueFieldsIssuetype.m */,
+				348102921A4F4E9800033E36 /* JIRIssueFieldsPriority.h */,
+				348102931A4F4E9800033E36 /* JIRIssueFieldsPriority.m */,
+				348102941A4F4E9800033E36 /* JIRIssueFieldsProgress.h */,
+				348102951A4F4E9800033E36 /* JIRIssueFieldsProgress.m */,
+				348102961A4F4E9800033E36 /* JIRIssueFieldsProject.h */,
+				348102971A4F4E9800033E36 /* JIRIssueFieldsProject.m */,
+				348102981A4F4E9800033E36 /* JIRIssueFieldsReporter.h */,
+				348102991A4F4E9800033E36 /* JIRIssueFieldsReporter.m */,
+				3481029A1A4F4E9800033E36 /* JIRIssueFieldsStatus.h */,
+				3481029B1A4F4E9800033E36 /* JIRIssueFieldsStatus.m */,
+				3481029C1A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.h */,
+				3481029D1A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.m */,
+				3481029E1A4F4E9800033E36 /* JIRIssueFieldsVotes.h */,
+				3481029F1A4F4E9800033E36 /* JIRIssueFieldsVotes.m */,
+				348102A01A4F4E9800033E36 /* JIRIssueFieldsWatches.h */,
+				348102A11A4F4E9800033E36 /* JIRIssueFieldsWatches.m */,
+				348102A21A4F4E9800033E36 /* JIRIssues.h */,
+				348102A31A4F4E9800033E36 /* JIRIssues.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -502,28 +582,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				340BDB1A1A4E244B00E425FE /* AFURLResponseSerialization.m in Sources */,
+				348102B31A4F4E9800033E36 /* JIRIssues.m in Sources */,
 				340BDB1C1A4E245600E425FE /* AFURLConnectionOperation.m in Sources */,
 				340BDB351A4E498100E425FE /* JIRProject.m in Sources */,
+				348102A41A4F4E9800033E36 /* JIRIssue.m in Sources */,
 				340BDB191A4E244800E425FE /* AFURLSessionManager.m in Sources */,
 				340BDB1F1A4E246100E425FE /* AFHTTPSessionManager.m in Sources */,
 				340BDB2F1A4E48EC00E425FE /* JIRSession.m in Sources */,
+				348102A91A4F4E9800033E36 /* JIRIssueFieldsCreator.m in Sources */,
+				348102A71A4F4E9800033E36 /* JIRIssueFieldsAssignee.m in Sources */,
 				340BDB211A4E246500E425FE /* AFHTTPRequestOperation.m in Sources */,
 				340BDB201A4E246300E425FE /* AFHTTPRequestOperationManager.m in Sources */,
 				340BDB1B1A4E244F00E425FE /* AFURLRequestSerialization.m in Sources */,
+				348102AB1A4F4E9800033E36 /* JIRIssueFieldsPriority.m in Sources */,
 				340BDB1E1A4E245C00E425FE /* AFNetworkReachabilityManager.m in Sources */,
+				348102B11A4F4E9800033E36 /* JIRIssueFieldsVotes.m in Sources */,
+				348102AD1A4F4E9800033E36 /* JIRIssueFieldsProject.m in Sources */,
 				340BDB1D1A4E245A00E425FE /* AFSecurityPolicy.m in Sources */,
+				348102AF1A4F4E9800033E36 /* JIRIssueFieldsStatus.m in Sources */,
+				348102AC1A4F4E9800033E36 /* JIRIssueFieldsProgress.m in Sources */,
 				340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */,
 				340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */,
 				340BDB171A4E243400E425FE /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				348102B01A4F4E9800033E36 /* JIRIssueFieldsStatusStatusCategory.m in Sources */,
 				340BDB181A4E243600E425FE /* AFOAuth2Manager.m in Sources */,
+				348102B21A4F4E9800033E36 /* JIRIssueFieldsWatches.m in Sources */,
+				348102AA1A4F4E9800033E36 /* JIRIssueFieldsIssuetype.m in Sources */,
 				340BDB281A4E248200E425FE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				340BDB271A4E247F00E425FE /* UIAlertView+AFNetworking.m in Sources */,
 				340BDB261A4E247D00E425FE /* UIButton+AFNetworking.m in Sources */,
 				340BDB251A4E247A00E425FE /* UIImageView+AFNetworking.m in Sources */,
+				348102A51A4F4E9800033E36 /* JIRIssueFields.m in Sources */,
+				348102AE1A4F4E9800033E36 /* JIRIssueFieldsReporter.m in Sources */,
+				348102A81A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m in Sources */,
 				340BDB241A4E247700E425FE /* UIProgressView+AFNetworking.m in Sources */,
 				340BDB231A4E247000E425FE /* UIRefreshControl+AFNetworking.m in Sources */,
 				340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */,
 				340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */,
+				348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */,
 				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
 				340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */,
 				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
@@ -729,6 +825,7 @@
 				340BDA9B1A4DEAB600E425FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		340BDA9C1A4DEAB600E425FE /* Build configuration list for PBXNativeTarget "JiraAutherTests" */ = {
 			isa = XCConfigurationList;
@@ -737,6 +834,7 @@
 				340BDA9E1A4DEAB600E425FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

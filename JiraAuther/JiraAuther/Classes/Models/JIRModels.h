@@ -14,4 +14,21 @@
 #import "JIRSession.h"
 #import "JIRSessionLoginInfo.h"
 
+#import "JIRIssues.h"
+#import "JIRIssue.h"
+#import "JIRIssueFields.h"
+#import "JIRIssueFieldsAggregateprogress.h"
+#import "JIRIssueFieldsAssignee.h"
+#import "JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.h"
+#import "JIRIssueFieldsCreator.h"
+#import "JIRIssueFieldsIssuetype.h"
+#import "JIRIssueFieldsPriority.h"
+#import "JIRIssueFieldsProgress.h"
+#import "JIRIssueFieldsProject.h"
+#import "JIRIssueFieldsReporter.h"
+#import "JIRIssueFieldsStatus.h"
+#import "JIRIssueFieldsStatusStatusCategory.h"
+#import "JIRIssueFieldsVotes.h"
+#import "JIRIssueFieldsWatches.h"
+
 #endif
