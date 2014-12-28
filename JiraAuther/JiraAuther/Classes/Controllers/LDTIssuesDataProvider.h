@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 Lottadot LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface LDTIssuesDataProvider : NSObject
+#import "LDTGenericTableDataProvider.h"
+
+@class JIRIssue, JIRProject;
+
+@interface LDTIssuesDataProvider : LDTGenericTableDataProvider
+
+- (instancetype)initWithProject:(JIRProject *)project;
 
 @end
