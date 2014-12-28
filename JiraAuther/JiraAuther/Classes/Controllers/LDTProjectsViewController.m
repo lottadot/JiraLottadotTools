@@ -7,31 +7,61 @@
 //
 
 #import "LDTProjectsViewController.h"
+#import "LDTProjectsDataProvider.h"
 
-@interface LDTProjectsViewController ()
+#import "LDTIssuesDataProvider.h"
+#import "LDTIssuesViewController.h"
+
+#import "JIRModels.h"
+@interface LDTProjectsViewController () <UITableViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation LDTProjectsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[self tableView] setDataSource:_dataProvider];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - iVars
+
+- (void)setDataProvider:(LDTProjectsDataProvider *)dataProvider
+{
+    _dataProvider = dataProvider;
+    [[self tableView] setDataSource:_dataProvider];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    __unused JIRProject *project = (JIRProject *)[[_dataProvider items] objectAtIndex:indexPath.row];
+    [[self tableView] deselectRowAtIndexPath:indexPath animated:NO];
+  
+    // TODO
 }
-*/
+
+#pragma mark - Storyboard
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [super prepareForSegue:segue sender:sender];
+    
+    if ([segue.identifier isEqualToString:@"IssuesViewController"]) {
+        
+        __unused NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        
+        LDTIssuesViewController *issuesViewController = (LDTIssuesViewController *)segue.destinationViewController;
+        NSAssert(nil != issuesViewController, @"issuesViewController is nil");
+        
+        LDTIssuesDataProvider *dataProvider = [LDTIssuesDataProvider new];
+        [issuesViewController setDataProvider:dataProvider];
+
+    }
+}
 
 @end

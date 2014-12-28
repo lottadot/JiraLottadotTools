@@ -6,8 +6,12 @@
 //  Copyright (c) 2014 Lottadot LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
+@class LDTProjectsDataProvider;
 
 @interface LDTProjectsViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet LDTProjectsDataProvider *dataProvider;
 
 @end
