@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class AFHTTPRequestSerializer;
+@class AFHTTPRequestSerializer, LDTProjectsViewController, LDTProjectsDataProvider;
 
 @interface ViewController : UIViewController
 

@@ -16,6 +16,9 @@
 
 #import "JIRModels.h"
 
+#import "LDTProjectsViewController.h"
+#import "LDTProjectsDataProvider.h"
+
 #define kJiraAutherServiceProviderIdentifier @"JiraAutherServiceProviderIdentifier"
 
 @interface ViewController () <UITextFieldDelegate>
@@ -28,6 +31,8 @@
 
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *password;
+
+@property (nonatomic, strong) LDTProjectsViewController *projectsViewController;
 
 @end
 
@@ -189,12 +194,9 @@
                 JIRProject *project = [JIRProject instanceFromDictionary:projectdict];
                 [projects addObject:project];
             }
-
-            NSLog(@"projects:%@", projects);
             
-            JIRProject *firstProject = (JIRProject *)[projects firstObject];
-            [strongSelf issuesForProject:firstProject];
-        } 
+            [self displayProjects:projects];
+        }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
@@ -203,6 +205,39 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem" message:[error description] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
         [alert show];
     }];
+}
+
+- (void)displayProjects:(NSArray *)projects
+{
+    NSParameterAssert(projects);
+    
+    NSAssert(nil != self.navigationController, @"NavController is nil");
+                     
+    if (nil != projects) {
+        
+        LDTProjectsDataProvider *dataProvider = [LDTProjectsDataProvider new];
+        [dataProvider setItems:projects];
+        
+        [[self projectsViewController] setDataProvider:dataProvider];
+        
+        NSAssert(nil != _projectsViewController, @"ViewController is empty");
+        [self.navigationController showViewController:_projectsViewController sender:nil];
+    }
+}
+
+- (LDTProjectsViewController *)projectsViewController
+{
+    if (nil == _projectsViewController) {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        NSAssert(nil != storyboard, nil);
+        
+        LDTProjectsViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"ProjectsViewController"];
+        NSAssert(nil != viewController, @"viewcontroller is nil");
+        
+        _projectsViewController = viewController;
+    }
+    return _projectsViewController;
 }
 
 - (void)issuesForProject:(JIRProject *)project
