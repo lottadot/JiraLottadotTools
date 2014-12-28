@@ -41,17 +41,19 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 ### Setup the Jira Development Instance
 
-#### Fire it up
+#### Fire Jira up
 
 ````
 atlas-run-standalone --product jira
 ````
 
-#### Configure it
+Use admin:admin to login.
+
+#### Configure Jira
 
 1. Create a test project [http://localhost:2990/jira](http://localhost:2990/jira), call it "TestProject1". Depending on the type of project you choose to create, you may have the option to provide it a 'key'. If so, set that as "TP1".
 3. Create an issue [http://localhost:2990/jira/secure/CreateIssue!default.jspa](http://localhost:2990/jira/secure/CreateIssue!default.jspa) in that project, call it "TestIssue1".
-4. Create a new user [http://localhost:2990/jira/secure/admin/user/UserBrowser.jspa](http://localhost:2990/jira/secure/admin/user/UserBrowser.jspa) with username "Lottadot" and password "password".
+4. Create a new user [http://localhost:2990/jira/secure/admin/user/UserBrowser.jspa](http://localhost:2990/jira/secure/admin/user/UserBrowser.jspa) with username "Lottadot" and password "password". Edit the project you created and add this user to the project permissions.
 5. Configure Jira to enable Basic Authentication, via "Application Links" on the admin screen [http://localhost:2990/jira/plugins/servlet/applinks/listApplicationLinks](http://localhost:2990/jira/plugins/servlet/applinks/listApplicationLinks). Use bogus URL's, since this isn't a web-app that's wanting to authenticate, it's an iOS app.
 
 ![image](Assets/jiraAutherAppLinkCreationScreenshot1.png =600x300)
@@ -59,7 +61,19 @@ atlas-run-standalone --product jira
 ![image](Assets/jiraAutherAppLinkCreationScreenshot4.png =600x200)
 ![image](Assets/jiraAutherAppLinkCreationScreenshot5.png =600x500)
 
-## Run the app.
+### Setup the iOS App
+
+#### Configure the iOS app.
+
+Open the Xcode Workspace. Shift-Command-F and locate the following strings:
+
+1. LDTJiraAuthenticationTestsValidUsername
+2. LDTJiraAuthenticationTestsValidPassword
+3. LDTJiraAPIClientBaseURLString
+
+replace the values in each for the user, password, and jira configuration you created in the prior steps.
+
+## Run the iOS app.
 
 Open the Xcode workspace. 
 

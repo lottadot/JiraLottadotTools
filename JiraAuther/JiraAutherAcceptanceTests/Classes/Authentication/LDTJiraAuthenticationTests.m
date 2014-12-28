@@ -8,6 +8,9 @@
 
 #import "KIF/KIF.h"
 
+static NSString * const LDTJiraAuthenticationTestsValidUsername = @"lottadot";
+static NSString * const LDTJiraAuthenticationTestsValidPassword = @"password";
+
 @class KIFTestCase;
 
 @interface LDTJiraAuthenticationTests : KIFTestCase
@@ -30,7 +33,7 @@
 - (void)test02AuthenticateInvalid
 {
     [tester clearTextFromAndThenEnterText:@"someome" intoViewWithAccessibilityLabel:@"userNameTextField"];
-        [tester clearTextFromAndThenEnterText:@"password" intoViewWithAccessibilityLabel:@"passwordTextField"];
+        [tester clearTextFromAndThenEnterText:@"passwordfoo" intoViewWithAccessibilityLabel:@"passwordTextField"];
     [tester tapViewWithAccessibilityLabel:@"authenticateButton"];
     
     [tester waitForViewWithAccessibilityLabel:@"Login Failed"];
@@ -42,8 +45,8 @@
 /// Enters bogus username/password, submits, verifies no is shown
 - (void)test03AuthenticateValid
 {
-    [tester clearTextFromAndThenEnterText:@"lottadot" intoViewWithAccessibilityLabel:@"userNameTextField"];
-    [tester clearTextFromAndThenEnterText:@"password" intoViewWithAccessibilityLabel:@"passwordTextField"];
+    [tester clearTextFromAndThenEnterText:LDTJiraAuthenticationTestsValidUsername intoViewWithAccessibilityLabel:@"userNameTextField"];
+    [tester clearTextFromAndThenEnterText:LDTJiraAuthenticationTestsValidPassword intoViewWithAccessibilityLabel:@"passwordTextField"];
     [tester tapViewWithAccessibilityLabel:@"authenticateButton"];
     
     [tester waitForAbsenceOfViewWithAccessibilityLabel:@"Login Failed"];
