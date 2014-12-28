@@ -40,6 +40,7 @@
 		340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB2E1A4E48EC00E425FE /* JIRSessionLoginInfo.m */; };
 		340BDB351A4E498100E425FE /* JIRProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB321A4E498100E425FE /* JIRProject.m */; };
 		340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */; };
+		341D42D91A50538F001896D6 /* LDTGenericTableDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D42D81A50538F001896D6 /* LDTGenericTableDataProvider.m */; };
 		348102A41A4F4E9800033E36 /* JIRIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102851A4F4E9800033E36 /* JIRIssue.m */; };
 		348102A51A4F4E9800033E36 /* JIRIssueFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102871A4F4E9800033E36 /* JIRIssueFields.m */; };
 		348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102891A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m */; };
@@ -174,6 +175,8 @@
 		340BDB331A4E498100E425FE /* JIRProjectAvatarUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRProjectAvatarUrls.h; path = Classes/Models/JIRProjectAvatarUrls.h; sourceTree = "<group>"; };
 		340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRProjectAvatarUrls.m; path = Classes/Models/JIRProjectAvatarUrls.m; sourceTree = "<group>"; };
 		340BDB371A4E49AB00E425FE /* JIRModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JIRModels.h; path = Classes/Models/JIRModels.h; sourceTree = "<group>"; };
+		341D42D71A50538F001896D6 /* LDTGenericTableDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTGenericTableDataProvider.h; path = Classes/Util/LDTGenericTableDataProvider.h; sourceTree = "<group>"; };
+		341D42D81A50538F001896D6 /* LDTGenericTableDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTGenericTableDataProvider.m; path = Classes/Util/LDTGenericTableDataProvider.m; sourceTree = "<group>"; };
 		348102841A4F4E9800033E36 /* JIRIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssue.h; path = Classes/Models/JIRIssue.h; sourceTree = "<group>"; };
 		348102851A4F4E9800033E36 /* JIRIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssue.m; path = Classes/Models/JIRIssue.m; sourceTree = "<group>"; };
 		348102861A4F4E9800033E36 /* JIRIssueFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFields.h; path = Classes/Models/JIRIssueFields.h; sourceTree = "<group>"; };
@@ -264,8 +267,6 @@
 				340BDB2A1A4E48DC00E425FE /* Models */,
 				340BDA7D1A4DEAB600E425FE /* AppDelegate.h */,
 				340BDA7E1A4DEAB600E425FE /* AppDelegate.m */,
-				340BDA801A4DEAB600E425FE /* ViewController.h */,
-				340BDA811A4DEAB600E425FE /* ViewController.m */,
 				340BDA831A4DEAB600E425FE /* Main.storyboard */,
 				340BDA861A4DEAB600E425FE /* Images.xcassets */,
 				340BDA881A4DEAB600E425FE /* LaunchScreen.xib */,
@@ -453,6 +454,8 @@
 		348102B41A4F5E1900033E36 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				340BDA801A4DEAB600E425FE /* ViewController.h */,
+				340BDA811A4DEAB600E425FE /* ViewController.m */,
 				348102B51A4F5E3E00033E36 /* LDTProjectsViewController.h */,
 				348102B61A4F5E3E00033E36 /* LDTProjectsViewController.m */,
 				348102B81A4F5E5E00033E36 /* LDTIssuesViewController.h */,
@@ -461,6 +464,8 @@
 				348102BC1A4F5EB600033E36 /* LDTIssuesDataProvider.m */,
 				348102BE1A4F5EC800033E36 /* LDTProjectsDataProvider.h */,
 				348102BF1A4F5EC800033E36 /* LDTProjectsDataProvider.m */,
+				341D42D71A50538F001896D6 /* LDTGenericTableDataProvider.h */,
+				341D42D81A50538F001896D6 /* LDTGenericTableDataProvider.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -650,6 +655,7 @@
 				340BDB241A4E247700E425FE /* UIProgressView+AFNetworking.m in Sources */,
 				340BDB231A4E247000E425FE /* UIRefreshControl+AFNetworking.m in Sources */,
 				340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */,
+				341D42D91A50538F001896D6 /* LDTGenericTableDataProvider.m in Sources */,
 				340BDA7F1A4DEAB600E425FE /* AppDelegate.m in Sources */,
 				348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */,
 				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
