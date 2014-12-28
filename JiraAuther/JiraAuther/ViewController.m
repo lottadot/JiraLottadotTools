@@ -7,18 +7,9 @@
 //
 
 #import "ViewController.h"
-//#import "AFNetworking.h"
-//#import "AFHTTPRequestOperationManager.h"
-//#import "AFHTTPRequestOperation.h"
-//#import "AFURLRequestSerialization.h"
-//#import "AFHTTPRequestSerializer+OAuth2.h"
-//#import "AFOAuth2Manager.h"
-
 #import "JIRModels.h"
-
 #import "LDTProjectsViewController.h"
 #import "LDTProjectsDataProvider.h"
-
 #import "LDTJiraAPIClient.h"
 
 #define kJiraAutherServiceProviderIdentifier @"JiraAutherServiceProviderIdentifier"
@@ -30,9 +21,6 @@
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *passwordLabel;
-
-@property (nonatomic, strong) NSString *username;
-@property (nonatomic, strong) NSString *password;
 
 @property (nonatomic, strong) LDTProjectsViewController *projectsViewController;
 

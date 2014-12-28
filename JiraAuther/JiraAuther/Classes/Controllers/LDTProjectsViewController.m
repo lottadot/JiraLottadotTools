@@ -59,12 +59,12 @@
             
         } else {
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Issues Failed"
                                                             message:[error localizedDescription]
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
-            [alert setAccessibilityLabel:@"IssuesFailed"];
+            [alert setAccessibilityLabel:@"Issues Failed"];
             [alert show];
             
         }

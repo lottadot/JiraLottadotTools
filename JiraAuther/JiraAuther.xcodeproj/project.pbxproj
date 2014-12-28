@@ -200,7 +200,7 @@
 		345A01351A50859100194E91 /* LDTJiraAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTJiraAPIClient.h; path = Classes/Services/LDTJiraAPIClient.h; sourceTree = "<group>"; };
 		345A01361A50859100194E91 /* LDTJiraAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTJiraAPIClient.m; path = Classes/Services/LDTJiraAPIClient.m; sourceTree = "<group>"; };
 		345A01441A508F5400194E91 /* JiraAutherTests copy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JiraAutherTests copy.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		345A01451A508F5400194E91 /* JiraAutherTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JiraAutherTests copy-Info.plist"; path = "/Users/shane/projects/atlassian/JiraLottadotTools/JiraAuther/JiraAutherTests copy-Info.plist"; sourceTree = "<absolute>"; };
+		345A01451A508F5400194E91 /* JiraAutherAcceptanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "JiraAutherAcceptanceTests-Info.plist"; path = "/Users/shane/projects/atlassian/JiraLottadotTools/JiraAuther/JiraAutherAcceptanceTests-Info.plist"; sourceTree = "<absolute>"; };
 		345A01531A5090FF00194E91 /* LDTJiraAuthenticationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTJiraAuthenticationTests.m; path = JiraAutherAcceptanceTests/Classes/Authentication/LDTJiraAuthenticationTests.m; sourceTree = "<group>"; };
 		345A01581A50947B00194E91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		348102841A4F4E9800033E36 /* JIRIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssue.h; path = Classes/Models/JIRIssue.h; sourceTree = "<group>"; };
@@ -285,7 +285,6 @@
 				340BDA921A4DEAB600E425FE /* JiraAutherTests */,
 				345A01511A50904300194E91 /* JiraAutherAcceptanceTests */,
 				340BDA771A4DEAB600E425FE /* Products */,
-				345A01451A508F5400194E91 /* JiraAutherTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -505,6 +504,7 @@
 			isa = PBXGroup;
 			children = (
 				345A01521A50908C00194E91 /* Authentication */,
+				345A01611A509F6900194E91 /* Supporting Files */,
 			);
 			name = JiraAutherAcceptanceTests;
 			sourceTree = "<group>";
@@ -515,6 +515,14 @@
 				345A01531A5090FF00194E91 /* LDTJiraAuthenticationTests.m */,
 			);
 			name = Authentication;
+			sourceTree = "<group>";
+		};
+		345A01611A509F6900194E91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				345A01451A508F5400194E91 /* JiraAutherAcceptanceTests-Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		348102B41A4F5E1900033E36 /* ViewControllers */ = {
@@ -970,7 +978,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JiraAutherTests copy-Info.plist";
+				INFOPLIST_FILE = "JiraAutherAcceptanceTests/JiraAutherAcceptanceTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -991,7 +999,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JiraAutherTests copy-Info.plist";
+				INFOPLIST_FILE = "JiraAutherAcceptanceTests/JiraAutherAcceptanceTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

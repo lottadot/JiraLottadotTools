@@ -12,22 +12,6 @@
 
 @implementation LDTIssuesDataProvider
 
-- (instancetype)initWithProject:(JIRProject *)project
-{
-    NSParameterAssert(project);
-    self = [super init];
-    
-    if (!self) {
-        return nil;
-    }
-    
-    if (nil != project) {
-        // TODO
-    }
-    
-    return self;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *issueTableViewCellIdentifier = @"LDTIssueTableViewCellIdentifier";
