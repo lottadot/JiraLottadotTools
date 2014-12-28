@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class LDTIssuesDataProvider;
+
 @interface LDTIssuesViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet LDTIssuesDataProvider *dataProvider;
 
 @end
