@@ -109,7 +109,7 @@
         } else {
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"login failed"
-                                                            message:[error description]
+                                                            message:[error localizedDescription]
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
@@ -132,7 +132,7 @@
         } else {
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem"
-                                                            message:[error description]
+                                                            message:[error localizedDescription]
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];

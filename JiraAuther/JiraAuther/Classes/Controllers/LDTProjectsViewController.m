@@ -54,7 +54,7 @@
         } else {
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem"
-                                                            message:[error description]
+                                                            message:[error localizedDescription]
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
