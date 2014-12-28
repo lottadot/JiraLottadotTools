@@ -56,6 +56,10 @@
 		348102B11A4F4E9800033E36 /* JIRIssueFieldsVotes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481029F1A4F4E9800033E36 /* JIRIssueFieldsVotes.m */; };
 		348102B21A4F4E9800033E36 /* JIRIssueFieldsWatches.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102A11A4F4E9800033E36 /* JIRIssueFieldsWatches.m */; };
 		348102B31A4F4E9800033E36 /* JIRIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102A31A4F4E9800033E36 /* JIRIssues.m */; };
+		348102B71A4F5E3E00033E36 /* LDTProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102B61A4F5E3E00033E36 /* LDTProjectsViewController.m */; };
+		348102BA1A4F5E5E00033E36 /* LDTIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102B91A4F5E5E00033E36 /* LDTIssuesViewController.m */; };
+		348102BD1A4F5EB600033E36 /* LDTIssuesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102BC1A4F5EB600033E36 /* LDTIssuesDataProvider.m */; };
+		348102C01A4F5EC800033E36 /* LDTProjectsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102BF1A4F5EC800033E36 /* LDTProjectsDataProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,14 @@
 		348102A11A4F4E9800033E36 /* JIRIssueFieldsWatches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssueFieldsWatches.m; path = Classes/Models/JIRIssueFieldsWatches.m; sourceTree = "<group>"; };
 		348102A21A4F4E9800033E36 /* JIRIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssues.h; path = Classes/Models/JIRIssues.h; sourceTree = "<group>"; };
 		348102A31A4F4E9800033E36 /* JIRIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssues.m; path = Classes/Models/JIRIssues.m; sourceTree = "<group>"; };
+		348102B51A4F5E3E00033E36 /* LDTProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTProjectsViewController.h; path = Classes/Controllers/LDTProjectsViewController.h; sourceTree = "<group>"; };
+		348102B61A4F5E3E00033E36 /* LDTProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTProjectsViewController.m; path = Classes/Controllers/LDTProjectsViewController.m; sourceTree = "<group>"; };
+		348102B81A4F5E5E00033E36 /* LDTIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTIssuesViewController.h; path = Classes/Controllers/LDTIssuesViewController.h; sourceTree = "<group>"; };
+		348102B91A4F5E5E00033E36 /* LDTIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTIssuesViewController.m; path = Classes/Controllers/LDTIssuesViewController.m; sourceTree = "<group>"; };
+		348102BB1A4F5EB600033E36 /* LDTIssuesDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTIssuesDataProvider.h; path = Classes/Controllers/LDTIssuesDataProvider.h; sourceTree = "<group>"; };
+		348102BC1A4F5EB600033E36 /* LDTIssuesDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTIssuesDataProvider.m; path = Classes/Controllers/LDTIssuesDataProvider.m; sourceTree = "<group>"; };
+		348102BE1A4F5EC800033E36 /* LDTProjectsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTProjectsDataProvider.h; path = Classes/Controllers/LDTProjectsDataProvider.h; sourceTree = "<group>"; };
+		348102BF1A4F5EC800033E36 /* LDTProjectsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTProjectsDataProvider.m; path = Classes/Controllers/LDTProjectsDataProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +260,7 @@
 		340BDA781A4DEAB600E425FE /* JiraAuther */ = {
 			isa = PBXGroup;
 			children = (
+				348102B41A4F5E1900033E36 /* ViewControllers */,
 				340BDB2A1A4E48DC00E425FE /* Models */,
 				340BDA7D1A4DEAB600E425FE /* AppDelegate.h */,
 				340BDA7E1A4DEAB600E425FE /* AppDelegate.m */,
@@ -437,6 +450,21 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		348102B41A4F5E1900033E36 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				348102B51A4F5E3E00033E36 /* LDTProjectsViewController.h */,
+				348102B61A4F5E3E00033E36 /* LDTProjectsViewController.m */,
+				348102B81A4F5E5E00033E36 /* LDTIssuesViewController.h */,
+				348102B91A4F5E5E00033E36 /* LDTIssuesViewController.m */,
+				348102BB1A4F5EB600033E36 /* LDTIssuesDataProvider.h */,
+				348102BC1A4F5EB600033E36 /* LDTIssuesDataProvider.m */,
+				348102BE1A4F5EC800033E36 /* LDTProjectsDataProvider.h */,
+				348102BF1A4F5EC800033E36 /* LDTProjectsDataProvider.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,6 +509,7 @@
 		340BDA6E1A4DEAB600E425FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LDT;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Lottadot LLC";
 				TargetAttributes = {
@@ -584,6 +613,7 @@
 				340BDB1A1A4E244B00E425FE /* AFURLResponseSerialization.m in Sources */,
 				348102B31A4F4E9800033E36 /* JIRIssues.m in Sources */,
 				340BDB1C1A4E245600E425FE /* AFURLConnectionOperation.m in Sources */,
+				348102C01A4F5EC800033E36 /* LDTProjectsDataProvider.m in Sources */,
 				340BDB351A4E498100E425FE /* JIRProject.m in Sources */,
 				348102A41A4F4E9800033E36 /* JIRIssue.m in Sources */,
 				340BDB191A4E244800E425FE /* AFURLSessionManager.m in Sources */,
@@ -600,6 +630,7 @@
 				348102AD1A4F4E9800033E36 /* JIRIssueFieldsProject.m in Sources */,
 				340BDB1D1A4E245A00E425FE /* AFSecurityPolicy.m in Sources */,
 				348102AF1A4F4E9800033E36 /* JIRIssueFieldsStatus.m in Sources */,
+				348102BA1A4F5E5E00033E36 /* LDTIssuesViewController.m in Sources */,
 				348102AC1A4F4E9800033E36 /* JIRIssueFieldsProgress.m in Sources */,
 				340BDB291A4E248400E425FE /* AFNetworkActivityIndicatorManager.m in Sources */,
 				340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */,
@@ -615,6 +646,7 @@
 				348102A51A4F4E9800033E36 /* JIRIssueFields.m in Sources */,
 				348102AE1A4F4E9800033E36 /* JIRIssueFieldsReporter.m in Sources */,
 				348102A81A4F4E9800033E36 /* JIRIssueFieldsAssigneeAvatarUrlsIssueFieldsProjectAvatarUrlsIssueFieldsReporterAvatarUrlsIssueFieldsCreatorAvatarUrls.m in Sources */,
+				348102B71A4F5E3E00033E36 /* LDTProjectsViewController.m in Sources */,
 				340BDB241A4E247700E425FE /* UIProgressView+AFNetworking.m in Sources */,
 				340BDB231A4E247000E425FE /* UIRefreshControl+AFNetworking.m in Sources */,
 				340BDB221A4E246B00E425FE /* UIWebView+AFNetworking.m in Sources */,
@@ -622,6 +654,7 @@
 				348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */,
 				340BDA7C1A4DEAB600E425FE /* main.m in Sources */,
 				340BDB301A4E48EC00E425FE /* JIRSessionLoginInfo.m in Sources */,
+				348102BD1A4F5EB600033E36 /* LDTIssuesDataProvider.m in Sources */,
 				340BDA821A4DEAB600E425FE /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
