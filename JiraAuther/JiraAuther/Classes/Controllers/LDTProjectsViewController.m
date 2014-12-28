@@ -13,6 +13,8 @@
 #import "LDTIssuesViewController.h"
 
 #import "JIRModels.h"
+#import "LDTJiraAPIClient.h"
+
 @interface LDTProjectsViewController () <UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -42,26 +44,45 @@
     __unused JIRProject *project = (JIRProject *)[[_dataProvider items] objectAtIndex:indexPath.row];
     [[self tableView] deselectRowAtIndexPath:indexPath animated:NO];
   
-    // TODO
+    [[LDTJiraAPIClient sharedClient] issuesForProjectKey:[project key] withBlock:^(JIRIssues *issues, NSError *error) {
+       
+        if (nil != issues) {
+            
+            [self displayJiraIssues:(JIRIssues *)issues forProject:project];
+            
+            
+        } else {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem"
+                                                            message:[error description]
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"ok"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+        }
+        
+    }];
 }
 
-#pragma mark - Storyboard
+#pragma mark - Issues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)displayJiraIssues:(JIRIssues *)jiraIssues forProject:(JIRProject *)project
 {
-    [super prepareForSegue:segue sender:sender];
+    NSParameterAssert(jiraIssues);
+    NSParameterAssert(project);
     
-    if ([segue.identifier isEqualToString:@"IssuesViewController"]) {
-        
-        __unused NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
-        
-        LDTIssuesViewController *issuesViewController = (LDTIssuesViewController *)segue.destinationViewController;
-        NSAssert(nil != issuesViewController, @"issuesViewController is nil");
-        
-        LDTIssuesDataProvider *dataProvider = [LDTIssuesDataProvider new];
-        [issuesViewController setDataProvider:dataProvider];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    NSAssert(nil != storyboard, nil);
+    
+    LDTIssuesViewController *issuesViewController = [storyboard instantiateViewControllerWithIdentifier:@"IssuesViewController"];
+    NSAssert(nil != issuesViewController, @"viewcontroller is nil");
 
-    }
+    LDTIssuesDataProvider *dataProvider = [LDTIssuesDataProvider new];
+    [issuesViewController setDataProvider:dataProvider];
+    [dataProvider setItems:jiraIssues.issues];
+    
+    [self.navigationController showViewController:issuesViewController sender:nil];
 }
 
 @end
