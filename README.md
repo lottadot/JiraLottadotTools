@@ -29,6 +29,8 @@ git submodule update --init --recursive
 ## Setup the Development Environment
 
 ````
+gem install jira-ruby
+
 brew install xctool
 brew tap atlassian/tap
 brew install hg
