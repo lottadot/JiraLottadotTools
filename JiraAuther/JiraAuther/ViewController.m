@@ -108,6 +108,9 @@
             
         } else {
             
+            [[LDTJiraAPIClient sharedClient] setUsername:nil];
+            [[LDTJiraAPIClient sharedClient] setPassword:nil];
+            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"login failed"
                                                             message:[error localizedDescription]
                                                            delegate:nil
