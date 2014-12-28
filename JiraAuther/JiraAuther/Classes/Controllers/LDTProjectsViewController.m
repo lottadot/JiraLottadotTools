@@ -58,6 +58,7 @@
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
+            [alert setAccessibilityLabel:@"IssuesFailed"];
             [alert show];
             
         }

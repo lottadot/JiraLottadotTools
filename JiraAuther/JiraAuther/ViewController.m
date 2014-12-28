@@ -113,6 +113,7 @@
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
+            [alert setAccessibilityLabel:@"LoginFailed"];
             [alert show];
             
         }
@@ -136,6 +137,7 @@
                                                            delegate:nil
                                                   cancelButtonTitle:@"ok"
                                                   otherButtonTitles:nil];
+            [alert setAccessibilityLabel:@"ProjectsFailed"];
             [alert show];
             
         }
