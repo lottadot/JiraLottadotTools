@@ -33,11 +33,14 @@ static NSString * const LDTJiraAPIClientBaseURLString = @"http://apoc.local:2990
 
 - (void)authenticate:(void (^)(BOOL success, NSError *error))block
 {
-    [LDTJiraAPIClient sharedClient].responseSerializer = [AFJSONResponseSerializer serializer];
-    [LDTJiraAPIClient sharedClient].requestSerializer = [AFJSONRequestSerializer serializer];
+    NSAssert(nil != self.username, nil);
+    NSAssert(nil != self.password, nil);
     
-    [[LDTJiraAPIClient sharedClient].requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
-
+    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
+    
+    [self.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
+    
     [[LDTJiraAPIClient sharedClient] GET:@"rest/auth/1/session" parameters:nil success:^(__unused NSURLSessionDataTask *task, id JSON) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
@@ -70,12 +73,15 @@ static NSString * const LDTJiraAPIClientBaseURLString = @"http://apoc.local:2990
 
 - (void)projectsWithBlock:(void (^)(NSArray *projects, NSError *error))block
 {
-    [LDTJiraAPIClient sharedClient].responseSerializer = [AFJSONResponseSerializer serializer];
-    [LDTJiraAPIClient sharedClient].requestSerializer = [AFJSONRequestSerializer serializer];
+    NSAssert(nil != self.username, nil);
+    NSAssert(nil != self.password, nil);
+
+    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
     
-    [[LDTJiraAPIClient sharedClient].requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
+    [self.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
     
-    [[LDTJiraAPIClient sharedClient] GET:@"rest/api/2/project" parameters:nil success:^(__unused NSURLSessionDataTask *task, id JSON) {
+    [self GET:@"rest/api/2/project" parameters:nil success:^(__unused NSURLSessionDataTask *task, id JSON) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
         NSInteger statuscode = response.statusCode;
@@ -115,13 +121,16 @@ static NSString * const LDTJiraAPIClientBaseURLString = @"http://apoc.local:2990
         return;
     }
     
-    [LDTJiraAPIClient sharedClient].responseSerializer = [AFJSONResponseSerializer serializer];
-    [LDTJiraAPIClient sharedClient].requestSerializer = [AFJSONRequestSerializer serializer];
+    NSAssert(nil != self.username, nil);
+    NSAssert(nil != self.password, nil);
     
-    [[LDTJiraAPIClient sharedClient].requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
+    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
+    
+    [self.requestSerializer setAuthorizationHeaderFieldWithUsername:[self username] password:[self password]];
     
     NSString *urlString = [NSString stringWithFormat:@"rest/api/2/search?jql=project=%@&maxResults=-1", projectKey];
-    [[LDTJiraAPIClient sharedClient] GET:urlString parameters:nil success:^(__unused NSURLSessionDataTask *task, id JSON) {
+    [self GET:urlString parameters:nil success:^(__unused NSURLSessionDataTask *task, id JSON) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
         NSInteger statuscode = response.statusCode;
