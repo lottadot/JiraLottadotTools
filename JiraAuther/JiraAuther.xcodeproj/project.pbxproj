@@ -42,6 +42,11 @@
 		340BDB361A4E498100E425FE /* JIRProjectAvatarUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDB341A4E498100E425FE /* JIRProjectAvatarUrls.m */; };
 		341D42D91A50538F001896D6 /* LDTGenericTableDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D42D81A50538F001896D6 /* LDTGenericTableDataProvider.m */; };
 		345A01371A50859100194E91 /* LDTJiraAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 345A01361A50859100194E91 /* LDTJiraAPIClient.m */; };
+		345A013E1A508F5400194E91 /* JiraAutherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BDA951A4DEAB600E425FE /* JiraAutherTests.m */; };
+		345A01551A50921500194E91 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340BDACF1A4DEEDD00E425FE /* libKIF.a */; };
+		345A01561A50930300194E91 /* LDTJiraAuthenticationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345A01531A5090FF00194E91 /* LDTJiraAuthenticationTests.m */; };
+		345A01571A50943A00194E91 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340BDB101A4E219D00E425FE /* MobileCoreServices.framework */; };
+		345A01591A50947B00194E91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A01581A50947B00194E91 /* CoreGraphics.framework */; };
 		348102A41A4F4E9800033E36 /* JIRIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102851A4F4E9800033E36 /* JIRIssue.m */; };
 		348102A51A4F4E9800033E36 /* JIRIssueFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102871A4F4E9800033E36 /* JIRIssueFields.m */; };
 		348102A61A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m in Sources */ = {isa = PBXBuildFile; fileRef = 348102891A4F4E9800033E36 /* JIRIssueFieldsAggregateprogress.m */; };
@@ -106,6 +111,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = EB60ECEB177F8DB3005A041A;
 			remoteInfo = "KIF Tests-OCUnit";
+		};
+		345A013C1A508F5400194E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDA6E1A4DEAB600E425FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340BDA751A4DEAB600E425FE;
+			remoteInfo = JiraAuther;
+		};
+		345A014C1A508F6400194E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 340BDAC51A4DEEDC00E425FE /* KIF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EABD46791857A0C700A5F081;
+			remoteInfo = KIF;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -180,6 +199,10 @@
 		341D42D81A50538F001896D6 /* LDTGenericTableDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTGenericTableDataProvider.m; path = Classes/Util/LDTGenericTableDataProvider.m; sourceTree = "<group>"; };
 		345A01351A50859100194E91 /* LDTJiraAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDTJiraAPIClient.h; path = Classes/Services/LDTJiraAPIClient.h; sourceTree = "<group>"; };
 		345A01361A50859100194E91 /* LDTJiraAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTJiraAPIClient.m; path = Classes/Services/LDTJiraAPIClient.m; sourceTree = "<group>"; };
+		345A01441A508F5400194E91 /* JiraAutherTests copy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JiraAutherTests copy.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		345A01451A508F5400194E91 /* JiraAutherTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JiraAutherTests copy-Info.plist"; path = "/Users/shane/projects/atlassian/JiraLottadotTools/JiraAuther/JiraAutherTests copy-Info.plist"; sourceTree = "<absolute>"; };
+		345A01531A5090FF00194E91 /* LDTJiraAuthenticationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDTJiraAuthenticationTests.m; path = JiraAutherAcceptanceTests/Classes/Authentication/LDTJiraAuthenticationTests.m; sourceTree = "<group>"; };
+		345A01581A50947B00194E91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		348102841A4F4E9800033E36 /* JIRIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssue.h; path = Classes/Models/JIRIssue.h; sourceTree = "<group>"; };
 		348102851A4F4E9800033E36 /* JIRIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JIRIssue.m; path = Classes/Models/JIRIssue.m; sourceTree = "<group>"; };
 		348102861A4F4E9800033E36 /* JIRIssueFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JIRIssueFields.h; path = Classes/Models/JIRIssueFields.h; sourceTree = "<group>"; };
@@ -240,6 +263,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		345A013F1A508F5400194E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345A01591A50947B00194E91 /* CoreGraphics.framework in Frameworks */,
+				345A01571A50943A00194E91 /* MobileCoreServices.framework in Frameworks */,
+				345A01551A50921500194E91 /* libKIF.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -250,7 +283,9 @@
 				340BDB141A4E21C400E425FE /* Frameworks */,
 				340BDA9F1A4DEABF00E425FE /* Vendor */,
 				340BDA921A4DEAB600E425FE /* JiraAutherTests */,
+				345A01511A50904300194E91 /* JiraAutherAcceptanceTests */,
 				340BDA771A4DEAB600E425FE /* Products */,
+				345A01451A508F5400194E91 /* JiraAutherTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +294,7 @@
 			children = (
 				340BDA761A4DEAB600E425FE /* JiraAuther.app */,
 				340BDA8F1A4DEAB600E425FE /* JiraAutherTests.xctest */,
+				345A01441A508F5400194E91 /* JiraAutherTests copy.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,6 +436,7 @@
 		340BDB141A4E21C400E425FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				345A01581A50947B00194E91 /* CoreGraphics.framework */,
 				340BDB151A4E240300E425FE /* Security.framework */,
 				340BDB121A4E21B600E425FE /* QuartzCore.framework */,
 				340BDB101A4E219D00E425FE /* MobileCoreServices.framework */,
@@ -464,6 +501,22 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		345A01511A50904300194E91 /* JiraAutherAcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				345A01521A50908C00194E91 /* Authentication */,
+			);
+			name = JiraAutherAcceptanceTests;
+			sourceTree = "<group>";
+		};
+		345A01521A50908C00194E91 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				345A01531A5090FF00194E91 /* LDTJiraAuthenticationTests.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
 		348102B41A4F5E1900033E36 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +574,25 @@
 			productReference = 340BDA8F1A4DEAB600E425FE /* JiraAutherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		345A013A1A508F5400194E91 /* JiraAutherAcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345A01411A508F5400194E91 /* Build configuration list for PBXNativeTarget "JiraAutherAcceptanceTests" */;
+			buildPhases = (
+				345A013D1A508F5400194E91 /* Sources */,
+				345A013F1A508F5400194E91 /* Frameworks */,
+				345A01401A508F5400194E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				345A014D1A508F6400194E91 /* PBXTargetDependency */,
+				345A013B1A508F5400194E91 /* PBXTargetDependency */,
+			);
+			name = JiraAutherAcceptanceTests;
+			productName = JiraAutherTests;
+			productReference = 345A01441A508F5400194E91 /* JiraAutherTests copy.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -561,6 +633,7 @@
 			targets = (
 				340BDA751A4DEAB600E425FE /* JiraAuther */,
 				340BDA8E1A4DEAB600E425FE /* JiraAutherTests */,
+				345A013A1A508F5400194E91 /* JiraAutherAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,6 +688,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		340BDA8D1A4DEAB600E425FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345A01401A508F5400194E91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -687,6 +767,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		345A013D1A508F5400194E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345A01561A50930300194E91 /* LDTJiraAuthenticationTests.m in Sources */,
+				345A013E1A508F5400194E91 /* JiraAutherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -694,6 +783,16 @@
 			isa = PBXTargetDependency;
 			target = 340BDA751A4DEAB600E425FE /* JiraAuther */;
 			targetProxy = 340BDA901A4DEAB600E425FE /* PBXContainerItemProxy */;
+		};
+		345A013B1A508F5400194E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340BDA751A4DEAB600E425FE /* JiraAuther */;
+			targetProxy = 345A013C1A508F5400194E91 /* PBXContainerItemProxy */;
+		};
+		345A014D1A508F6400194E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			targetProxy = 345A014C1A508F6400194E91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -804,7 +903,7 @@
 				);
 				INFOPLIST_FILE = JiraAuther/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LIBTOOLFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -820,7 +919,7 @@
 				);
 				INFOPLIST_FILE = JiraAuther/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LIBTOOLFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -859,6 +958,52 @@
 			};
 			name = Release;
 		};
+		345A01421A508F5400194E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JiraAutherTests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "JiraAutherTests copy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraAuther.app/JiraAuther";
+			};
+			name = Debug;
+		};
+		345A01431A508F5400194E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JiraAutherTests copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "JiraAutherTests copy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiraAuther.app/JiraAuther";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -885,6 +1030,15 @@
 			buildConfigurations = (
 				340BDA9D1A4DEAB600E425FE /* Debug */,
 				340BDA9E1A4DEAB600E425FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345A01411A508F5400194E91 /* Build configuration list for PBXNativeTarget "JiraAutherAcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345A01421A508F5400194E91 /* Debug */,
+				345A01431A508F5400194E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

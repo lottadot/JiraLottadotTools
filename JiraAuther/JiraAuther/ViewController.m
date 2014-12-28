@@ -111,12 +111,12 @@
             [[LDTJiraAPIClient sharedClient] setUsername:nil];
             [[LDTJiraAPIClient sharedClient] setPassword:nil];
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"login failed"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
                                                             message:[error localizedDescription]
                                                            delegate:nil
-                                                  cancelButtonTitle:@"ok"
+                                                  cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert setAccessibilityLabel:@"LoginFailed"];
+            [alert setAccessibilityLabel:@"Login Failed"];
             [alert show];
             
         }
@@ -135,12 +135,12 @@
             
         } else {
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"problem"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Projects Failed"
                                                             message:[error localizedDescription]
                                                            delegate:nil
-                                                  cancelButtonTitle:@"ok"
+                                                  cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert setAccessibilityLabel:@"ProjectsFailed"];
+            [alert setAccessibilityLabel:@"Projects Failed"];
             [alert show];
             
         }

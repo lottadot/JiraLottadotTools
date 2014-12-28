@@ -46,6 +46,7 @@
     
     JIRIssue *issue = (JIRIssue *)[self.items objectAtIndex:indexPath.row];
     [[cell textLabel] setText:[issue key]];
+    [cell setAccessibilityLabel:[issue key]];
 }
 
 

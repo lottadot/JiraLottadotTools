@@ -23,6 +23,12 @@
 
 @implementation LDTProjectsViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.tableView setAccessibilityLabel:@"Project List"];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

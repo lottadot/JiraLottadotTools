@@ -17,6 +17,13 @@
 
 @implementation LDTIssuesViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.tableView setAccessibilityLabel:@"Issue List"];
+}
+
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

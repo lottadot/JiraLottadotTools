@@ -30,6 +30,7 @@
     
     JIRProject *project = (JIRProject *)[self.items objectAtIndex:indexPath.row];
     [[cell textLabel] setText:[project name]];
+    [cell setAccessibilityLabel:[project name]];
 }
 
 @end
