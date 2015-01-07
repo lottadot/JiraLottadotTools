@@ -25,8 +25,6 @@ static NSString * const LDTJiraAuthenticationTestsValidPassword = @"password";
     [tester waitForViewWithAccessibilityLabel:@"userNameTextField"];
     [tester waitForViewWithAccessibilityLabel:@"passwordTextField"];
     [tester waitForViewWithAccessibilityLabel:@"authenticateButton"];
-    
-    //[tester waitForAbsenceOfViewWithAccessibilityLabel:@"authenticateButton"];
 }
 
 /// Enters bogus username/password, submits, verifies alert is shown, dismisses alert
