@@ -83,4 +83,6 @@ Build and run the app in the iPhone simulator. Login with the account. You shoul
 
 Quit that run, select the JiraAutherAcceptanceTests build scheme and run it's tests (command-U).
 
+## Presentation
 
+[Download the presentation](https://speakerdeck.com/lottadot/automated-testing-and-processes-for-your-ios-agile-team-codemash-2-dot-0-1-dot-5)
